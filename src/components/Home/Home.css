@@ -2,6 +2,7 @@
   margin-top: 72px;
 }
 
+/* =====================START HOME SECTION======================== */
 .main .home-bg {
   width: 100%;
   height: 100vh;
@@ -86,6 +87,65 @@
   transition: 0.1s all linear;
 }
 
+/* =====================END HOME SECTION======================== */
+/* =====================START SKILLS SECTION======================== */
+
+.main .skills {
+  width: 100%;
+  background-color: rgb(28, 25, 23);
+}
+
+.main .skills .skills-header {
+  text-align: center;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.4rem;
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 50px;
+}
+
+.main .skills .skills-container {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.main .skills .skills-container .skill {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .skills .skills-container {
+  padding-bottom: 150px;
+}
+
+.main .skills .skills-container .skill img {
+  margin-top: 60px;
+  height: 100px;
+}
+
+.main .skills .skills-container .skill img:hover {
+  transition: 0.1s all linear;
+  background-color: rgb(226, 116, 35, 0.4);
+}
+
+/* =====================END SKILLS SECTION======================== */
+/* =====================START PORTFOLIO SECTION======================== */
+
+/* =====================END PORTFOLIO SECTION======================== */
+
 @media screen and (max-width: 1100px) {
   .main .home-container .info-container .info .in h1,
   .main .home-container .info-container .info .in h3 {
@@ -103,6 +163,14 @@
   .main .home-container .info-container .download {
     letter-spacing: 0.4rem;
     padding: 15px 30px;
+  }
+
+  .main .skills .skills-header {
+    font-size: 26px;
+  }
+
+  .main .skills .skills-container .skill img {
+    height: 80px;
   }
 }
 
@@ -126,5 +194,23 @@
     letter-spacing: 0.3rem;
     padding: 10px 20px;
     font-size: 16px;
+  }
+
+  .main .skills .skills-header {
+    font-size: 22px;
+  }
+
+  .main .skills .skills-container .skill img {
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .main .skills .skills-header {
+    font-size: 18px;
+  }
+
+  .main .skills .skills-container .skill img {
+    height: 45px;
   }
 }
