@@ -105,7 +105,7 @@
   letter-spacing: 0.4rem;
   font-size: 30px;
   font-weight: 800;
-  padding-top: 50px;
+  padding: 80px 0;
 }
 
 .main .skills .skills-container {
@@ -133,7 +133,7 @@
 
 .main .skills .skills-container .skill img {
   margin-top: 60px;
-  height: 100px;
+  height: 85px;
 }
 
 .main .skills .skills-container .skill img:hover {
@@ -143,8 +143,141 @@
 
 /* =====================END SKILLS SECTION======================== */
 /* =====================START PORTFOLIO SECTION======================== */
+.portfolio {
+  width: 100%;
+  background-color: rgb(245, 245, 244);
+}
+
+.portfolio .portfolio-container {
+  max-width: 1240px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.portfolio .portfolio-container .pr-header {
+  text-align: center;
+  padding-top: 30px;
+  letter-spacing: 0.3rem;
+}
+
+.portfolio .portfolio-container .all-projects-btn {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.portfolio .all-projects-btn a {
+  color: rgb(0, 0, 255);
+  font-weight: 700;
+}
+
+.portfolio .all-projects-btn a:hover {
+  transition: 0.2s all linear;
+  color: rgb(15, 15, 165);
+}
+
+.portfolio .portfolio-container .portfolios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.portfolio .portfolio-container .portfolios .pr {
+  width: 30%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio .portfolio-container .portfolios .pr .pr-image img {
+  width: 100%;
+}
+
+.portfolio .portfolio-container .portfolios .pr .pr-title {
+  margin-top: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.portfolio .portfolio-container .portfolios .pr .pr-title p {
+  text-align: center;
+}
+
+.portfolio .portfolio-container .portfolios .pr .pr-btns {
+  height: 4rem;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid rgb(178, 62, 23);
+  color: rgb(0, 0, 255);
+}
+
+.portfolio .portfolio-container .portfolios .pr .pr-btns a {
+  color: rgb(0, 0, 255);
+}
+
+.portfolio .portfolio-container .portfolios .pr .pr-btns a:hover {
+  transition: 0.2s all linear;
+  color: rgb(1, 1, 127);
+}
 
 /* =====================END PORTFOLIO SECTION======================== */
+/* =====================START BLOGS SECTION======================== */
+.blogs {
+  background-color: rgb(68, 64, 60);
+}
+
+.blogs .blog-header {
+  color: #fff;
+}
+
+.portfolio .portfolio-container .portfolios .blog {
+  background: rgb(251, 199, 158);
+}
+
+.portfolio .portfolio-container .portfolios .pr .blog-title {
+  padding-top: 20px;
+}
+
+/* =====================END BLOGS SECTION======================== */
+/* =====================START CONTACTS SECTION======================== */
+.contact {
+  width: 100%;
+  background: linear-gradient(to right, rgb(225, 179, 224), rgb(110, 39, 109));
+}
+
+.contact .contact-container {
+  max-width: 1240px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.contact .contact-container .right h2 {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.652);
+}
+
+.contact .contact-container .right a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.contact .contact-container .right a:hover {
+  transition: 0.1s linear;
+  color: rgba(255, 255, 255, 0.514);
+}
+
+/* =====================END CONTACTS SECTION======================== */
 
 @media screen and (max-width: 1100px) {
   .main .home-container .info-container .info .in h1,
@@ -170,7 +303,7 @@
   }
 
   .main .skills .skills-container .skill img {
-    height: 80px;
+    height: 75px;
   }
 }
 
@@ -201,7 +334,47 @@
   }
 
   .main .skills .skills-container .skill img {
-    height: 55px;
+    height: 50px;
+  }
+
+  .portfolio .portfolio-container .portfolios {
+    flex-direction: column;
+  }
+
+  .portfolio .portfolio-container .portfolios .pr {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .contact .contact-container .right h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact .contact-container {
+    max-width: 1240px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .contact .contact-container .right {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .portfolio .portfolio-container .portfolios .pr {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
@@ -211,6 +384,12 @@
   }
 
   .main .skills .skills-container .skill img {
-    height: 45px;
+    height: 40px;
+  }
+
+  .portfolio .portfolio-container .portfolios .pr {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
   }
 }
