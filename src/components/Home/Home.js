@@ -165,7 +165,7 @@ const Home = () => {
       </div>
 
       {/* CONTACT */}
-      <div className="contact">
+      <div className="contact" id="contact">
         <div className="contact-container">
           <div className="right">
             <h2>Phone</h2>

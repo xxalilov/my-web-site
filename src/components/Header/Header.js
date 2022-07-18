@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -12,12 +13,10 @@ const Header = () => {
         <nav className="navbar">
           <ul>
             <li>
-              <a href="#" className="active">
-                Home
-              </a>
+              <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink to={"/about"}>About</NavLink>
             </li>
             <li>
               <a href="#">Portfolio</a>
@@ -26,7 +25,7 @@ const Header = () => {
               <a href="#">Blog</a>
             </li>
             <li>
-              <a href="#">Contact me</a>
+              <a href="/contact">Contact me</a>
             </li>
           </ul>
         </nav>
@@ -77,12 +76,14 @@ const Header = () => {
         >
           <ul>
             <li>
-              <a href="#" className="active">
+              <NavLink to={"/"} onClick={() => setIsOpenNavbar(false)}>
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink to={"/about"} onClick={() => setIsOpenNavbar(false)}>
+                About
+              </NavLink>
             </li>
             <li>
               <a href="#">Portfolio</a>
